@@ -45,4 +45,16 @@ public class LoginPage {
         return isFormOpened;
     }
 
+    public void enterCorrectFieldsAuthorizationForm() {
+        By authorizationFormEmailBy = By.xpath(formEmail);
+        WebElement authorizationFormEmailElement = driver.findElement(authorizationFormEmailBy);
+        authorizationFormEmailElement.sendKeys("test.agent@internet.ru");
+        By authorizationFormPasswordBy = By.xpath(formPassword);
+        WebElement authorizationFormPasswordElement = driver.findElement(authorizationFormPasswordBy);
+        authorizationFormPasswordElement.sendKeys("Asd94Lkj26");
+        By authorizationFormEnterButtonBy = By.xpath(buttonSingInOnLoginPage);
+        WebElement authorizationFormEnterButtonElement = driver.findElement(authorizationFormEnterButtonBy);
+        authorizationFormEnterButtonElement.click();
+
+    }
 }
