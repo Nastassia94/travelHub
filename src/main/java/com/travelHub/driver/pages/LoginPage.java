@@ -72,6 +72,6 @@ public class LoginPage {
     }
 
     public void orderTourFromServiceOrderCart(){
-        By selectCountryOfDepartureBy = By.xpath()
+//        By selectCountryOfDepartureBy = By.xpath('');
     }
 }

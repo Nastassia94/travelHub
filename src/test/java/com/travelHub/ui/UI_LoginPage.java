@@ -2,7 +2,6 @@ package com.travelHub.ui;
 
 import com.travelHub.driver.drivers.Driver;
 import com.travelHub.driver.pages.LoginPage;
-import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
