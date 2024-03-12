@@ -11,7 +11,7 @@ public class UI_LoginPage extends BaseTest {
     public void authorizationTest() throws InterruptedException {
 
         LoginPage mainPageTravelHub = new LoginPage(Driver.getDriver());
-        mainPageTravelHub.clickLinkPersonalCabinet();
+        mainPageTravelHub.clickOnSignInButton();
         Thread.sleep(5000);
         boolean actual = mainPageTravelHub.isAuthorizationFormOpened();
         boolean expected = true;
@@ -19,4 +19,10 @@ public class UI_LoginPage extends BaseTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
+   @Test
+    public void tourOrderCheck() throws InterruptedException{
+
+
+   }
 }

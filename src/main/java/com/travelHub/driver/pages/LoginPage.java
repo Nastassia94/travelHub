@@ -6,31 +6,44 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage {
-
-    private WebDriver driver;
+    // Login Page
     public String singInButtonOnMainPage = "//a[contains(@class, 'header-login')]";
     public String singInPage = "//h3[contains(@class, 'font-weight-bolder text-dark font-size-h4 font-size-h1-lg')][contains(text(), 'Личный кабинет TravelHub')]";
-
     public String formEmail = "//input[contains(@name, 'LoginForm[username]')]";
-
     public String formPassword = "//input[contains(@name, 'LoginForm[username]')]";
-
     public String buttonSingInOnLoginPage = "//button[contains(@class, 'btn submit-btn')][contains(text(), 'Войти')]";
 
+
+    // Tour Selection Page
+
+    public String fieldDepartureCountry = "//span[contains(@class, 'select2-selection__rendered')][contains (text(), 'Минск')]";
+
+    public String selectDepartureCountry = "//li[contains(@class, 'select2-results__option')][contains (text(), 'Москва')]";
+
+    public String searchButton = "//button[@class = 'btn btn-primary search-btn'][contains (text(), 'Поиск')]";
+
+    public String selectFirstTour = "//a[@class = 'btn btn-primary search-variants']";
+
+    public String selectAccommodationOption = "//a[@class = 'btn btn-primary font-weight-bolder px-4 py-2']";
+
+    // Basket of tours Page
+
+
+    private WebDriver driver;
     public LoginPage(WebDriver driver) {
         this.driver = Driver.getDriver();
         this.driver.get("https://travelhub.by/");
     }
-
     public WebDriver getDriver() {
         return driver;
     }
 
-    public void clickLinkPersonalCabinet() {
+    public void clickOnSignInButton() {
         By loginPageBy = By.xpath(singInButtonOnMainPage);
         WebElement mainPageElement = driver.findElement(loginPageBy);
         mainPageElement.click();
     }
+
 
     public boolean isAuthorizationFormOpened() {
         boolean isFormOpened = false;
@@ -56,5 +69,9 @@ public class LoginPage {
         WebElement authorizationFormEnterButtonElement = driver.findElement(authorizationFormEnterButtonBy);
         authorizationFormEnterButtonElement.click();
 
+    }
+
+    public void orderTourFromServiceOrderCart(){
+        By selectCountryOfDepartureBy = By.xpath()
     }
 }
