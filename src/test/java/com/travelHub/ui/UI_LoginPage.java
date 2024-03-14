@@ -26,7 +26,17 @@ public class UI_LoginPage extends BaseTest {
 
    @Test
     public void tourOrderCheck() throws InterruptedException{
+       authorizationTest();
+       LoginPage mainPageTravelHub = new LoginPage(Driver.getDriver());
+       boolean actual = mainPageTravelHub.isPersonalAccountPageOpened();
+       boolean expected = true;
+       Assertions.assertEquals(expected, actual);
+       Thread.sleep(5000);
+       mainPageTravelHub.orderTourFromServiceOrderCart();
+
+       Thread.sleep(5000);
 
 
    }
+
 }

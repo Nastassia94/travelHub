@@ -87,7 +87,10 @@ public class LoginPage {
         return isFormOpened;
     }
 
-//    public void orderTourFromServiceOrderCart(){
-//        By selectCountryOfDepartureBy = By.xpath('');
-//    }
+   public void orderTourFromServiceOrderCart(){
+
+       By selectCountryOfDepartureBy = By.xpath(fieldDepartureCountry);
+       WebElement selectCountryOfDepartureElement = driver.findElement(selectCountryOfDepartureBy);
+       selectCountryOfDepartureElement.click();
+   }
 }
