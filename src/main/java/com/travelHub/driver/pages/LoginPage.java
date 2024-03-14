@@ -10,7 +10,7 @@ public class LoginPage {
     public String singInButtonOnMainPage = "//a[contains(@class, 'header-login')]";
     public String singInPage = "//h3[contains(@class, 'font-weight-bolder text-dark font-size-h4 font-size-h1-lg')][contains(text(), 'Личный кабинет TravelHub')]";
     public String formEmail = "//input[contains(@name, 'LoginForm[username]')]";
-    public String formPassword = "//input[contains(@name, 'LoginForm[username]')]";
+    public String formPassword = "//input[contains(@name, 'LoginForm[password]')]";
     public String buttonSingInOnLoginPage = "//button[contains(@class, 'btn submit-btn')][contains(text(), 'Войти')]";
 
 
@@ -58,7 +58,7 @@ public class LoginPage {
         return isFormOpened;
     }
 
-    public void enterCorrectFieldsAuthorizationForm() {
+    public void enterCorrectFieldsAuthorizationForm() throws InterruptedException {
         By authorizationFormEmailBy = By.xpath(formEmail);
         WebElement authorizationFormEmailElement = driver.findElement(authorizationFormEmailBy);
         authorizationFormEmailElement.sendKeys("test.agent@internet.ru");
@@ -68,6 +68,7 @@ public class LoginPage {
         By authorizationFormEnterButtonBy = By.xpath(buttonSingInOnLoginPage);
         WebElement authorizationFormEnterButtonElement = driver.findElement(authorizationFormEnterButtonBy);
         authorizationFormEnterButtonElement.click();
+        Thread.sleep(5000);
 
     }
 

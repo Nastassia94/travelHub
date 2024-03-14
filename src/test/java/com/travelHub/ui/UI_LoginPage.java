@@ -14,6 +14,7 @@ public class UI_LoginPage extends BaseTest {
         Thread.sleep(5000);
         boolean actual = mainPageTravelHub.isAuthorizationFormOpened();
         boolean expected = true;
+        Thread.sleep(5000);
         mainPageTravelHub.enterCorrectFieldsAuthorizationForm();
         Assertions.assertEquals(expected, actual);
 
