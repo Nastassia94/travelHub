@@ -17,6 +17,10 @@ public class UI_LoginPage extends BaseTest {
         Thread.sleep(5000);
         mainPageTravelHub.enterCorrectFieldsAuthorizationForm();
         Assertions.assertEquals(expected, actual);
+        boolean actualPersonalPage = mainPageTravelHub.isPersonalAccountPageOpened();
+        boolean expectedPersonalPage = true;
+        Assertions.assertEquals(expectedPersonalPage, actualPersonalPage);
+        Thread.sleep(5000);
 
     }
 

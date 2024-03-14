@@ -10,8 +10,10 @@ public class LoginPage {
     public String singInButtonOnMainPage = "//a[contains(@class, 'header-login')]";
     public String singInPage = "//h3[contains(@class, 'font-weight-bolder text-dark font-size-h4 font-size-h1-lg')][contains(text(), 'Личный кабинет TravelHub')]";
     public String formEmail = "//input[contains(@name, 'LoginForm[username]')]";
-    public String formPassword = "//input[contains(@name, 'LoginForm[password]')]";
+    public String formPassword = "//input [contains(@name, 'LoginForm[password]')]";
     public String buttonSingInOnLoginPage = "//button[contains(@class, 'btn submit-btn')][contains(text(), 'Войти')]";
+
+    public String personalAccountPage = "//div[contains(text(), 'Привет,')]";
 
 
     // Tour Selection Page
@@ -68,11 +70,24 @@ public class LoginPage {
         By authorizationFormEnterButtonBy = By.xpath(buttonSingInOnLoginPage);
         WebElement authorizationFormEnterButtonElement = driver.findElement(authorizationFormEnterButtonBy);
         authorizationFormEnterButtonElement.click();
-        Thread.sleep(5000);
+
 
     }
 
-    public void orderTourFromServiceOrderCart(){
+    public boolean isPersonalAccountPageOpened() {
+        boolean isFormOpened = false;
+        By personalAccountPageOpenedBy = By.xpath(personalAccountPage);
+        WebElement personalAccountPageElement = driver.findElement(personalAccountPageOpenedBy);
+
+        if (personalAccountPageElement.isDisplayed()) {
+            isFormOpened = true;
+        } else {
+            isFormOpened = false;
+        }
+        return isFormOpened;
+    }
+
+//    public void orderTourFromServiceOrderCart(){
 //        By selectCountryOfDepartureBy = By.xpath('');
-    }
+//    }
 }
