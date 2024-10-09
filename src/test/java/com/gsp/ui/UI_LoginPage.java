@@ -1,7 +1,7 @@
 package com.travelHub.ui;
 
-import com.travelHub.driver.drivers.Driver;
-import com.travelHub.driver.pages.LoginPage;
+import com.gsp.driver.drivers.Driver;
+import com.gsp.driver.pages.LoginPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

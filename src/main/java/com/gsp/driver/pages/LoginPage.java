@@ -32,7 +32,7 @@ public class LoginPage {
     private WebDriver driver;
     public LoginPage(WebDriver driver) {
         this.driver = Driver.getDriver();
-        this.driver.get("https://travelhub.by/");
+        this.driver.get("https://staging.gsp.agsr.by/");
     }
     public WebDriver getDriver() {
         return driver;
@@ -61,10 +61,10 @@ public class LoginPage {
     public void enterCorrectFieldsAuthorizationForm() {
         By authorizationFormEmailBy = By.xpath(formEmail);
         WebElement authorizationFormEmailElement = driver.findElement(authorizationFormEmailBy);
-        authorizationFormEmailElement.sendKeys("test.agent@internet.ru");
+        authorizationFormEmailElement.sendKeys("ggse");
         By authorizationFormPasswordBy = By.xpath(formPassword);
         WebElement authorizationFormPasswordElement = driver.findElement(authorizationFormPasswordBy);
-        authorizationFormPasswordElement.sendKeys("Asd94Lkj26");
+        authorizationFormPasswordElement.sendKeys("11036085Ok");
         By authorizationFormEnterButtonBy = By.xpath(buttonSingInOnLoginPage);
         WebElement authorizationFormEnterButtonElement = driver.findElement(authorizationFormEnterButtonBy);
         authorizationFormEnterButtonElement.click();

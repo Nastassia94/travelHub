@@ -1,7 +1,7 @@
 package com.travelHub.ui;
 
 
-import com.travelHub.driver.drivers.Driver;
+import com.gsp.driver.drivers.Driver;
 import org.junit.jupiter.api.AfterEach;
 import org.openqa.selenium.*;
 
