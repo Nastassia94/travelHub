@@ -1,4 +1,4 @@
-package com.travelHub.api;
+package com.gsp.api;
 
 public class TestApi {
 }

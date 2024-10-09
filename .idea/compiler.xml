@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="travelHub" />
+        <module name="Gsp" />
         <module name="TravelHub" />
       </profile>
     </annotationProcessing>

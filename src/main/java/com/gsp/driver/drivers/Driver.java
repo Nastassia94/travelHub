@@ -1,4 +1,4 @@
-package com.travelHub.driver.drivers;
+package com.gsp.driver.drivers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

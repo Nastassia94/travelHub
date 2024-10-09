@@ -1,6 +1,6 @@
-package com.travelHub.driver.pages;
+package com.gsp.driver.pages;
 
-import com.travelHub.driver.drivers.Driver;
+import com.gsp.driver.drivers.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,15 +16,15 @@ public class LoginPage {
 
     // Tour Selection Page
 
-    public String fieldDepartureCountry = "//span[contains(@class, 'select2-selection__rendered')][contains (text(), 'Минск')]";
+   // public String fieldDepartureCountry = "//span[contains(@class, 'select2-selection__rendered')][contains (text(), 'Минск')]";
 
-    public String selectDepartureCountry = "//li[contains(@class, 'select2-results__option')][contains (text(), 'Москва')]";
+   // public String selectDepartureCountry = "//li[contains(@class, 'select2-results__option')][contains (text(), 'Москва')]";
 
-    public String searchButton = "//button[@class = 'btn btn-primary search-btn'][contains (text(), 'Поиск')]";
+  //  public String searchButton = "//button[@class = 'btn btn-primary search-btn'][contains (text(), 'Поиск')]";
 
-    public String selectFirstTour = "//a[@class = 'btn btn-primary search-variants']";
+   // public String selectFirstTour = "//a[@class = 'btn btn-primary search-variants']";
 
-    public String selectAccommodationOption = "//a[@class = 'btn btn-primary font-weight-bolder px-4 py-2']";
+  //  public String selectAccommodationOption = "//a[@class = 'btn btn-primary font-weight-bolder px-4 py-2']";
 
     // Basket of tours Page
 
